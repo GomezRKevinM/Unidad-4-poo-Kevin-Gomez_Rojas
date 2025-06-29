@@ -17,8 +17,9 @@ public class CuentaBancaria {
     }
 
     public CuentaBancaria (String numeroCuenta, Long saldo, String tipoCuenta) {
-        this(numeroCuenta, tipoCuenta);
+        this.numeroCuenta = numeroCuenta;
         this.saldo = saldo;
+        this.tipoCuenta = tipoCuenta;
     }
 
 }

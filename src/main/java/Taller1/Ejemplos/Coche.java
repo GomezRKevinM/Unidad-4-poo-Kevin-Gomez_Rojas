@@ -3,17 +3,15 @@ package Taller1.Ejemplos;
 public class Coche {
     String marca;
     String modelo;
-    // Constructor por defecto
-    public Coche() {
-        this.marca = "Desconocida";
-    }
-    // Constructor parametrizado
+
+    // Constructor con un parámetro
     public Coche(String marca) {
         this.marca = marca;
     }
-    // Constructor sobrecargado con dos parámetros
+    // Llamada al constructor anterior usando this()
     public Coche(String marca, String modelo) {
-        this.marca = marca;
+        this(marca); // Llama al constructor de un solo parámetro
         this.modelo = modelo;
     }
+
 }

@@ -1,17 +1,10 @@
 package Taller1.Ejemplos;
 
-public class Coche {
+public class Coche extends Vehiculo {
     String marca;
-    String modelo;
-
-    // Constructor con un parámetro
-    public Coche(String marca) {
+    // Llama al constructor de la clase base usando `super()`
+    public Coche(String tipo, String marca) {
+        super(tipo);
         this.marca = marca;
     }
-    // Llamada al constructor anterior usando this()
-    public Coche(String marca, String modelo) {
-        this(marca); // Llama al constructor de un solo parámetro
-        this.modelo = modelo;
-    }
-
 }

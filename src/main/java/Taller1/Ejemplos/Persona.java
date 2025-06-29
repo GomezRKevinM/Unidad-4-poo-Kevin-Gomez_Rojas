@@ -3,8 +3,8 @@ package Taller1.Ejemplos;
 public class Persona {
     String nombre;
 
-    // Constructor
-    public Persona(){
-        nombre = "Sin nombre";
+    // Constructor simple
+    public Persona(String nombre) {
+        this.nombre = nombre;
     }
 }

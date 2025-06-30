@@ -1,11 +1,13 @@
 package Taller6.Ejemplos;
 
 public class Vehiculo {
-    protected String tipo;
-    public Vehiculo(String tipo) {
-        this.tipo = tipo;
+    protected String marca;
+    protected double velocidad;
+    public Vehiculo(String marca, double velocidad) {
+        this.marca = marca;
+        this.velocidad = velocidad;
     }
-    protected void mostrarTipo() {
-        System.out.println("Tipo de vehículo: " + tipo);
+    protected void mostrarDetalles() {
+        System.out.println("Marca: " + marca + ", Velocidad: " + velocidad + " km/h");
     }
 }

@@ -1,5 +1,5 @@
 package Taller8.Ejemplos;
 
-public class ClaseC extends ClaseB,ClaseA {
+public class ClaseC extends ClaseB {
 
 }

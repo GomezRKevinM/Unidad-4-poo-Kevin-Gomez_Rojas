@@ -13,8 +13,8 @@ public class Producto {
         System.out.println("Nombre del producto: " + this.nombre);
         System.out.println("Precio del producto: " + this.precio);
     }
-    public static void cambiarPrecio(Producto producto, double nuevoPrecio) {
-        producto.precio = nuevoPrecio; // Cambia el precio del producto
+    public void cambiarPrecio(double nuevoPrecio) {
+        this.precio = nuevoPrecio; // Cambia el precio del producto
     }
 
 }

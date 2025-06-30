@@ -18,7 +18,7 @@ public class Estudiante {
         System.out.println("Edad del estudiante: " + this.edad);
     }
 
-    public static void cambiarEdad(Estudiante estudiante,int nuevaEdad) {
-        estudiante.edad = nuevaEdad;
+    public static void cambiarEdad(int nuevaEdad) {
+        this.edad = nuevaEdad;
     }
 }

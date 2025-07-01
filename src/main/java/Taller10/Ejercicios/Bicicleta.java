@@ -1,12 +1,14 @@
 package Taller10.Ejercicios;
 
 public class Bicicleta extends Vehiculo{
-    @Override
-    public void moverse(String tipoMovimiento) {
-        System.out.println("La bicicleta se está moviendo de forma " + tipoMovimiento + ".");
+
+    public void moverse() {
+        System.out.println("La bicicleta se está moviendo de forma .");
     }
 
     /**
-     * Este metodo sobrescribe el método moverse de la clase Vehiculo, pero no funciona porque la firma del método es diferente.
+     * Este metodo sobrescribe el método moverse de la clase Vehiculo, pero es una mala practica
+     * porque no se está proporcionando una implementación más específica o útil que la de la clase base.
+     * al no usar @Override, se puede confundir con un nuevo método en lugar de una sobrescritura.
      */
 }

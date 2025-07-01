@@ -2,9 +2,7 @@ package Taller14.Ejemplos;
 
 public class Main {
     public static void main(String[] args) {
-        Empleado empleado1 = new Gerente();
-        Empleado empleado2 = new Ingeniero();
-        empleado1.trabajar(); // Muestra: El gerente está gestionando el equipo.
-        empleado2.trabajar(); // Muestra: El ingeniero está diseñando.
+        Animal miAnimal = new Perro();
+        miAnimal.correr(); // Error de compilación: El método correr() no existe en Animal
     }
 }

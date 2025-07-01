@@ -93,26 +93,4 @@ public class Producto {
                 " cantidad: " + cantidad;
     }
 
-    public double calcularPrecioFinal() {
-        return precio - (precio * descuento);
-    }
-
-    public void calcularPrecioVenta(){
-        precio = precioCompra + (precioCompra * 0.4);
-    }
-
-    public void calcularDescuento() {
-        if (descuento < 0 || descuento > 1) {
-            throw new IllegalArgumentException("El descuento debe estar entre 0 y 1");
-        }
-        precio = precio - (precio * descuento);
-    }
-
-    public String generarEtiqueta() {
-        return "Producto: " + nombre + "\n" +
-               "Precio: " + precio + "\n" +
-               "Cantidad: " + cantidad + "\n" +
-               "Descuento: " + descuento * 100 + "%\n" +
-               "Precio Final: " + calcularPrecioFinal();
-    }
 }

@@ -2,9 +2,9 @@ package Taller14.Ejemplos;
 
 public class Main {
     public static void main(String[] args) {
-        Animal miAnimal = new Perro();
-        miAnimal.hacerSonido(); // Muestra: El perro ladra.
-        miAnimal = new Gato();
-        miAnimal.hacerSonido(); // Muestra: El gato maúlla.
+        Empleado empleado1 = new Gerente();
+        Empleado empleado2 = new Ingeniero();
+        empleado1.trabajar(); // Muestra: El gerente está gestionando el equipo.
+        empleado2.trabajar(); // Muestra: El ingeniero está diseñando.
     }
 }

@@ -1,5 +1,12 @@
 package Taller13.Ejemplos;
 
 public class Gato extends Animal{
-    // Aunque el método hacerSonido no se sobrescribe, el error se evita por falta de visibilidad o error lógico.
+    @Override
+    public void hacerSonido() {
+        System.out.println("El gato maulla");
+    }
+
+    public void ronronear() {
+        System.out.println("El gato está ronroneando");
+    }
 }

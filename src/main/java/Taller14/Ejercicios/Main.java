@@ -2,10 +2,13 @@ package Taller14.Ejercicios;
 
 public class Main {
     public static void main(String[] args) {
-        Estudiante estudiante = new Estudiante();
-        Profesor profesor = new Profesor();
+        Persona estudiante = new Estudiante();
 
-        estudiante.presentarse(); // Hola soy un estudiante.
-        profesor.presentarse(); // Hola soy un profesor.
+        estudiante.estudiar()
+
+        /**
+         *  el metodo estudiar() no se puede llamar directamente desde la clase Persona,
+         *  ya que este metodo es exclusivo de la clase Estudiante.
+         */
     }
 }

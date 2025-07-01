@@ -1,7 +1,15 @@
 package Taller12.Ejemplos;
 
-// Clase incorrecta que implementa ambas interfaces
+
 public class Anfibio implements Volador, Nadador {
-// Error de compilación: conflicto entre los métodos predeterminados de las interfaces
+    @Override
+    public void volar() {
+        System.out.println("El anfibio está volando.");
+    }
+
+    @Override
+    public void nadar() {
+        System.out.println("El anfibio está nadando.");
+    }
 }
 

@@ -1,11 +1,12 @@
 package Taller15.Ejercicios;
 
 public class Usuario {
+    private Long id;
     private String nombre;
     private String email;
     private String usuario;
     private String contrasena;
-    private String token;
+    private boolean isOnline;
 
     public Usuario(String nombre, String email, String usuario, String contrasena) {
         this.nombre = nombre;
@@ -46,18 +47,19 @@ public class Usuario {
         this.contrasena = contrasena;
     }
 
-    public Boolean validarCredenciales(String usuario, String contrasena) {
-        return this.usuario.equals(usuario) && this.contrasena.equals(contrasena);
+    public Long getId() {
+        return id;
     }
 
-    public Boolean validarEmail(String email) {
-        return this.email.equals(email);
+    public void setId(Long id) {
+        this.id = id;
     }
 
-    public Boolean tokenAutenticacion(String token) {
-        if(!this.usuario.equals(token)) {
-            throw new IllegalArgumentException("Token de autenticación inválido");
-        }
-        return true;
+    public boolean getIsOnline() {
+        return isOnline;
+    }
+
+    public void setIsOnline(boolean isOnline) {
+        this.isOnline = isOnline;
     }
 }

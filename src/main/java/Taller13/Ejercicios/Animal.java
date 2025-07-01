@@ -1,7 +1,7 @@
 package Taller13.Ejercicios;
 
 public abstract class Animal {
-    public default void comer() {
+    public void comer() {
         System.out.println("El animal está comiendo.");
     }
 

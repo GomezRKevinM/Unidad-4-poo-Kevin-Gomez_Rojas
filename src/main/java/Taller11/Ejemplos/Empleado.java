@@ -1,6 +1,6 @@
 package Taller11.Ejemplos;
 
-public class Empleado {
+public abstract class Empleado {
     protected String nombre;
     public Empleado(String nombre) {
         this.nombre = nombre;

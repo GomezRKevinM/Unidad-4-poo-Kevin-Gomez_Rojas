@@ -2,8 +2,8 @@ package Taller12.Ejercicios;
 
 public class Prueba {
     public static void main(String[] args) {
-        Ave pajaro = new Ave();
-        pajaro.volar(); // El ave está volando.
-        pajaro.cantar(); // El ave está cantando.
+        Pez pez = new Pez();
+        pez.respirar(); // El pez está respirando.
+        pez.nadar(); // El pez está nadando.
     }
 }

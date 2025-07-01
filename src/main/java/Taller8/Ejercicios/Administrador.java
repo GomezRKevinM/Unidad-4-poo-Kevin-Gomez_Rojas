@@ -9,7 +9,7 @@ public class Administrador extends Gerente{
     }
 
     public double getSalario() {
-        return this.salario;
+        return this.getSalario();
     }
     /**
      * No se puede acceder al salario desde la clase Administrador porque salario es un atributo privado de la clase Empleado.

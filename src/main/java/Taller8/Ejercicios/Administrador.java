@@ -1,16 +1,17 @@
 package Taller8.Ejercicios;
 
-public class Administrador extends Empleado,Gerente{
+public class Administrador extends Gerente{
     private String codigoAdministrador;
 
     public Administrador(String nombre, double salario, String departamento, String codigoAdministrador) {
-        super(nombre, salario);
-        setDepartamento(departamento);
+        super(nombre,salario,departamento);
         this.codigoAdministrador = codigoAdministrador;
     }
 
-    /*
-      Error: Class cannot extend multiple classes in Java.
-      Este error ocurre porque Java no permite que una clase extienda de más de una clase.
+    public double getSalario() {
+        return this.salario;
+    }
+    /**
+     * No se puede acceder al salario desde la clase Administrador porque salario es un atributo privado de la clase Empleado.
      */
 }

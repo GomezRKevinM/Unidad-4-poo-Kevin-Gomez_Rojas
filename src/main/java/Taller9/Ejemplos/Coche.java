@@ -2,9 +2,11 @@ package Taller9.Ejemplos;
 
 public class Coche extends Vehiculo{
     private int numeroPuertas;
+    private String marca;
 
     public Coche(String marca, int numeroPuertas) {
-        super(marca); // Llama al constructor de la clase base
+        super("Coche");
+        this.marca = marca;
         this.numeroPuertas = numeroPuertas;
     }
 }

@@ -1,6 +1,9 @@
 package Taller12.Ejemplos;
 
-// Clase incorrecta que no implementa todos los métodos
+// Corrigiendo uso incorrecto de la interfaz Volador
 public class Avion implements Volador {
-// Error de compilación: La clase Avion debe implementar el método volar()
+    @Override
+    public void volar() {
+        System.out.println("El avión está volando.");
+    }
 }
